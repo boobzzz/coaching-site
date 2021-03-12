@@ -43,6 +43,8 @@
 
 html,
 body {
+    --primary: #C1AA83;
+    --bg: #38527A;
 	padding: 0;
 	margin: 0;
 	font-family: Montserrat, sans-serif;
