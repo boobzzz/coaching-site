@@ -1,8 +1,16 @@
 import Head from "next/head";
 
+import { Header } from './Header';
+import { Footer } from './Footer';
+
 export const Layout = ({ children }) => (
     <div>
         <Head>
+            <link
+                rel="preload"
+                href="/fonts/Montserrat/Montserrat-ExtraLight.ttf"
+                as="font"
+                crossOrigin="" />
             <link
                 rel="preload"
                 href="/fonts/Montserrat/Montserrat-Light.ttf"
@@ -36,13 +44,13 @@ export const Layout = ({ children }) => (
             <title>Liliya Luts | professional certified coach</title>
             <meta name="description" content="Lilia Luts - organizational consultant, business coach, transformational coach, NLP Master, member of the International Coaching Federation (ICF)" />
             <meta name="keywords" content="coach, business coach, transformational coach, NLP, ICF" />
-            <meta name="robots" content="index, follow" />
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         </Head>
         <body>
-            <div>Header</div>
-            {children}
-            <div>Footer</div>
+            <div className="root">
+                <Header />
+                {children}
+                <Footer />
+            </div>
         </body>
     </div>
 )

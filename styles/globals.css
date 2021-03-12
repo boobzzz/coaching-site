@@ -1,5 +1,12 @@
 @font-face {
     font-family: "Montserrat";
+    src: url("/fonts/Montserrat/Montserrat-ExtraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
     src: url("/fonts/Montserrat/Montserrat-Light.ttf");
     font-style: normal;
     font-weight: 300;
@@ -43,7 +50,8 @@
 
 html,
 body {
-    --primary: #C1AA83;
+    --text: #d8d8d8;
+    --gold: #C1AA83;
     --bg: #38527A;
 	padding: 0;
 	margin: 0;
@@ -57,4 +65,17 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--bg);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
 }

@@ -1,0 +1,34 @@
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+.navList a {
+    padding: 0 0.5em;
+    font-weight: 300;
+    font-size: 1.7em;
+    color: #6f8686;
+    transition: all 0.3s ease;
+}
+
+.navList a::before {
+	color: var(--gold);
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	-webkit-transform: scale(1.3) translateX(20px) translateY(-20px) rotate(4deg);
+	-moz-transform: scale(1.3) translateX(20px) translateY(-20px) rotate(4deg);
+	transform: scale(1.3) translateX(20px) translateY(-20px) rotate(4deg);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+.navList a:hover::before,
+.navList a:focus::before {
+	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	opacity: 1;
+}
