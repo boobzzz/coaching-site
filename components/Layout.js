@@ -38,6 +38,16 @@ export const Layout = ({ children }) => (
                 crossOrigin="" />
             <link
                 rel="preload"
+                href="/fonts/Montserrat/Montserrat-ExtraBold.ttf"
+                as="font"
+                crossOrigin="" />
+            <link
+                rel="preload"
+                href="/fonts/Montserrat/Montserrat-Black.ttf"
+                as="font"
+                crossOrigin="" />
+            <link
+                rel="preload"
                 href="/fonts/MonotypeCorsiva/Monotype-Corsiva.ttf"
                 as="font"
                 crossOrigin="" />

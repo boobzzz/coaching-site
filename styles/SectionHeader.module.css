@@ -1,0 +1,10 @@
+.container {
+    position: absolute;
+    top: 0;
+}
+    .container h2 {
+        font-weight: 900;
+        font-size: 5em;
+        color: #FFFFFF;
+        opacity: 0.1;
+    }

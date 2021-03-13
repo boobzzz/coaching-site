@@ -1,10 +1,11 @@
 .navList {
     display: flex;
+	padding-top: 1em;
 }
 
 .navList a {
     padding: 0 0.5em;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.7em;
     color: #6f8686;
     transition: all 0.3s ease;

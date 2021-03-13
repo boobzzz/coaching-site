@@ -14,17 +14,15 @@ const companies = [
 
 export const Companies = () => (
     <section className={styles.section}>
-        <div className="content">
-            <ul className={styles.container}>
-                {companies.map(comp =>
-                    <li key={comp.id}>
-                        <Image
-                            src={comp.img}
-                            width={100}
-                            height={50} />
-                    </li>    
-                )}
-            </ul>
-        </div>
+        <ul className={styles.container}>
+            {companies.map(comp =>
+                <li key={comp.id}>
+                    <Image
+                        src={comp.img}
+                        width={140}
+                        height={60} />
+                </li>    
+            )}
+        </ul>
     </section>
 )

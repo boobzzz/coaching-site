@@ -1,0 +1,34 @@
+.section {
+    background-color: var(--blue);
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.img, .desc {
+    width: 50%;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4em;    
+}
+.descText {
+    display: flex;
+    padding: 2em 3em 2em 2em;
+    border-top: 2px solid var(--gold);
+    border-left: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+    .descText p {
+        font-weight: 300;
+        font-size: 1.25em;
+        text-align: justify;
+        color: var(--text);
+    }

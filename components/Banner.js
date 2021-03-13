@@ -8,16 +8,17 @@ export const Banner = () => (
         <div className={styles.container}>
             <div className={styles.motto}>
                 <span></span>
-                <h1>
+                <h2>
                     “Следуй зову сердца,<br/>
                     опираясь на внутреннюю силу”
-                </h1>
+                </h2>
             </div>
             <div className={styles.image}>
                 <Image
                     src="/images/banner-img.png"
                     width={510}
-                    height={750} />
+                    height={750}
+                    quality={100} />
             </div>
             <div className={styles.socials}>
                 <a href="https://www.facebook.com/" className={styles.icon}>
