@@ -3,6 +3,7 @@ import { Companies } from './Companies'
 import { About } from './About'
 import { Projects } from './Projects'
 import { Format } from './Format'
+import { Gallery } from './Gallery'
 
 export const Main = () => (
     <main>
@@ -11,5 +12,6 @@ export const Main = () => (
         <About />
         <Projects />
         <Format />
+        <Gallery />
     </main>
 )
