@@ -55,7 +55,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: "Monotype-Corsiva";
+    font-family: "Monotype";
     src: url("/fonts/MonotypeCorsiva/Monotype-Corsiva.ttf");
     font-style: normal;
     font-weight: 400;
@@ -69,7 +69,7 @@ body {
     --blue: #38527A;
 	padding: 0;
 	margin: 0;
-	font-family: Montserrat, sans-serif;
+	font-family: Montserrat, Monotype, sans-serif;
     scroll-behavior: smooth;
 }
 

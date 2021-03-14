@@ -51,7 +51,7 @@ export const Layout = ({ children }) => (
                 crossOrigin="" />
             <link
                 rel="preload"
-                href={`${prefix}/fonts/MonotypeCorsiva/Monotype-Corsiva.ttf`}
+                href="/fonts/MonotypeCorsiva/Monotype-Corsiva.ttf"
                 as="font"
                 crossOrigin="" />
             <title>Liliya Luts | professional certified coach</title>
