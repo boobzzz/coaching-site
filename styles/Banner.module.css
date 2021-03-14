@@ -29,12 +29,17 @@
         background-color: var(--gold);
     }
 
-.image {
+.img {
     display: flex;
     justify-content: center;
     width: 55%;
     opacity: 0.70;
 }
+    .img img {
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+    }
 
 .socials {
     position: absolute;

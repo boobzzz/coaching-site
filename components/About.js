@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { SectionHeader } from './UI/SectionHeader'
 import styles from '../styles/About.module.css'
 
@@ -7,12 +5,7 @@ export const About = () => (
 	<section>
 		<div id="about" className={styles.container}>
 			<div className={styles.img}>
-				<Image
-					src="/images/about-img.png"
-					layout="responsive"
-					width={680}
-					height={680}
-					quality={100} />
+				<img src="/images/about-img.png" alt=""/>
 			</div>
 			<div className={styles.desc}>
 				<SectionHeader title="Обо мне" position="right" />

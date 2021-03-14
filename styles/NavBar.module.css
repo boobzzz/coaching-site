@@ -1,5 +1,6 @@
 .navList {
     display: flex;
+    transition: all 0.5s ease;
 }
 
 .navList a {
@@ -7,7 +8,7 @@
     font-weight: 400;
     font-size: 1.5em;
     color: #6f8686;
-    transition: all 0.3s ease;
+    transition: inherit;
 }
 
 .navList a::before {

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
 import styles from '../styles/Banner.module.css'
@@ -13,12 +12,8 @@ export const Banner = () => (
                     опираясь на внутреннюю силу”
                 </h2>
             </div>
-            <div className={styles.image}>
-                <Image
-                    src="/images/banner-img.png"
-                    width={510}
-                    height={750}
-                    quality={100} />
+            <div className={styles.img}>
+                <img src="/images/banner-img.png" alt=""/>
             </div>
             <div className={styles.socials}>
                 <a href="https://www.facebook.com/" className={styles.icon}>

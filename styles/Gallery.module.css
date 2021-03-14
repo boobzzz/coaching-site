@@ -1,8 +1,14 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .img {
-    opacity: 0.8;
+    height: 50vh;
+	opacity: 0.9;
 }
+    .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
