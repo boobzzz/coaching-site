@@ -29,7 +29,7 @@
     border-bottom-left-radius: 40px;
 }
     .descText p {
-        font-weight: 300;
+        font-weight: 500;
         font-size: 1.25em;
         text-align: justify;
         color: var(--text);
