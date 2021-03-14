@@ -11,12 +11,14 @@ const gallery = [
     { id: 'gal08', url: '/images/gallery-8.jpg' },
 ]
 
+const prefix = '/coaching-site'
+
 export const Gallery = () => (
     <section>
         <div className={styles.container}>
             {gallery.map(img =>
                 <div key={img.id} className={styles.img}>
-                    <img src={img.url} alt=""/>
+                    <img src={`${prefix}${img.url}`} alt=""/>
                 </div>
             )}
         </div>

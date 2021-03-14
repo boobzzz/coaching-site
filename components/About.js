@@ -1,11 +1,13 @@
 import { SectionHeader } from './UI/SectionHeader'
 import styles from '../styles/About.module.css'
 
+const prefix = '/coaching-site'
+
 export const About = () => (
 	<section>
 		<div id="about" className={styles.container}>
 			<div className={styles.img}>
-				<img src="/images/about-img.png" alt=""/>
+				<img src={`${prefix}/images/about-img.png`} alt=""/>
 			</div>
 			<div className={styles.desc}>
 				<SectionHeader title="Обо мне" position="right" />

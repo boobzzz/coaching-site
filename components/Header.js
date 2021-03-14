@@ -4,6 +4,8 @@ import { NavBar } from './NavBar'
 import { useScroll } from '../hooks/useScroll'
 import styles from '../styles/HeaderMain.module.css'
 
+const prefix = '/coaching-site'
+
 export const Header = () => {
     const { scrolled } = useScroll()
     const headerClass = scrolled ? `${styles.container} ${styles.scrolled}` : styles.container
@@ -14,7 +16,9 @@ export const Header = () => {
             <div className={headerClass}>
                 <Link href="/#main">
                     <a className={logoClass}>
-                        <img src="/images/logo.svg" className={styles.img}/>
+                        <img
+                            src={`${prefix}/images/logo.svg`}
+                            className={styles.img}/>
                     </a>
                 </Link>
                 <NavBar scrolled={scrolled} />

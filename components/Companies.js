@@ -10,12 +10,14 @@ const companies = [
     { id: 'cmp07', img: '/images/apple.svg' }
 ]
 
+const prefix = '/coaching-site'
+
 export const Companies = () => (
     <section>
         <ul className={styles.container}>
             {companies.map(comp =>
                 <li key={comp.id} className={styles.brand}>
-                    <img src={comp.img} alt=""/>
+                    <img src={`${prefix}${comp.img}`} alt=""/>
                 </li>    
             )}
         </ul>

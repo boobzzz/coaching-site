@@ -2,6 +2,8 @@ import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
 import styles from '../styles/Banner.module.css'
 
+const prefix = '/coaching-site'
+
 export const Banner = () => (
     <section>
         <div id="main" className={styles.container}>
@@ -13,7 +15,7 @@ export const Banner = () => (
                 </h2>
             </div>
             <div className={styles.img}>
-                <img src="/images/banner-img.png" alt=""/>
+                <img src={`${prefix}/images/banner-img.png`} alt=""/>
             </div>
             <div className={styles.socials}>
                 <a href="https://www.facebook.com/" className={styles.icon}>
