@@ -1,7 +1,7 @@
 import { SectionHeader } from './UI/SectionHeader'
 import styles from '../styles/About.module.css'
 
-const prefix = '/coaching-site'
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const About = () => (
 	<section>

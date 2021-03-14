@@ -10,7 +10,7 @@ const companies = [
     { id: 'cmp07', img: '/images/apple.svg' }
 ]
 
-const prefix = '/coaching-site'
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const Companies = () => (
     <section>

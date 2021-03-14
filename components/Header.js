@@ -4,7 +4,7 @@ import { NavBar } from './NavBar'
 import { useScroll } from '../hooks/useScroll'
 import styles from '../styles/HeaderMain.module.css'
 
-const prefix = '/coaching-site'
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const Header = () => {
     const { scrolled } = useScroll()

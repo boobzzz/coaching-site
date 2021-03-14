@@ -2,7 +2,7 @@ import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
 import styles from '../styles/Banner.module.css'
 
-const prefix = '/coaching-site'
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const Banner = () => (
     <section>

@@ -11,7 +11,7 @@ const gallery = [
     { id: 'gal08', url: '/images/gallery-8.jpg' },
 ]
 
-const prefix = '/coaching-site'
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const Gallery = () => (
     <section>

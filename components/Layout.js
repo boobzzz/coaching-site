@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Header } from './Header';
 import { Footer } from './Footer';
 
-const prefix = '/coaching-site'
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const Layout = ({ children }) => (
     <div>
