@@ -16,7 +16,7 @@
     border-bottom-right-radius: 40px;
 }
     .motto h2 {
-        font-family: Monotype-Corsiva;
+        font-family: 'Monotype-Corsiva';
         font-weight: 300;
         font-size: 2.5em;
         color: var(--text);
