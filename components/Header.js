@@ -1,18 +1,22 @@
 import Image from 'next/image'
 
 import { NavBar } from './NavBar'
+import { useScroll } from '../hooks/useScroll'
 import styles from '../styles/HeaderMain.module.css'
 
-export const Header = () => (
-    <header>
-        <div className="content">
-            <div className={styles.container}>
+export const Header = () => {
+    const { scrolled } = useScroll()
+    const headerClass = scrolled ? `${styles.container} ${styles.scrolled}` : styles.container
+
+    return (
+        <header>
+            <div className={headerClass}>
                 <Image
                     src="/images/logo.svg"
-                    width={264}
-                    height={100} />
-                <NavBar />
+                    width={scrolled ? 132 : 264}
+                    height={scrolled ? 50 : 100} />
+                <NavBar scrolled={scrolled} />
             </div>
-        </div>
-    </header>
-)
+        </header>
+    )
+}

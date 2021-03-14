@@ -3,7 +3,17 @@
     top: 0; left: 0;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 3em;
+    padding: 0 3em;
     width: 100%;
+    min-height: 20vh;
     z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0; left: 0;
+    align-items: center;
+    min-height: 8vh;
+    /* background-color: var(--blue); */
 }

@@ -5,7 +5,7 @@ import styles from '../styles/Banner.module.css'
 
 export const Banner = () => (
     <section>
-        <div className={styles.container}>
+        <div id="main" className={styles.container}>
             <div className={styles.motto}>
                 <span></span>
                 <h2>

@@ -4,8 +4,8 @@ import { SectionHeader } from './UI/SectionHeader'
 import styles from '../styles/About.module.css'
 
 export const About = () => (
-	<section className={styles.section}>
-		<div className={styles.container}>
+	<section>
+		<div id="about" className={styles.container}>
 			<div className={styles.img}>
 				<Image
 					src="/images/about-img.png"

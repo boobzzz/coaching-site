@@ -1,10 +1,7 @@
-.section {
-    background-color: var(--blue);
-}
-
 .container {
     position: relative;
     display: flex;
+    background-color: var(--blue);
 }
 
 .img, .desc {
