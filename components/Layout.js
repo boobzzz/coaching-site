@@ -3,9 +3,12 @@ import Head from "next/head";
 import { Header } from './Header';
 import { Footer } from './Footer';
 
+const prefix = '/coaching-site'
+
 export const Layout = ({ children }) => (
     <div>
         <Head>
+            <link rel="shortcut icon" href={`${prefix}/favicon.ico`} />
             <link
                 rel="preload"
                 href="/fonts/Montserrat/Montserrat-ExtraLight.ttf"
