@@ -1,6 +1,16 @@
+.nav {
+	display: flex;
+}
+
 .navList {
     display: flex;
+	padding-top: 2em;
     transition: all 0.5s ease;
+}
+
+.scrolled {
+	align-self: center;
+	padding-top: 0;
 }
 
 .navList a {

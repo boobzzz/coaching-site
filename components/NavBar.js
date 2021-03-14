@@ -3,11 +3,11 @@ import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
 
 export const NavBar = ({ scrolled }) => {
-    const barStyle = scrolled ? { paddingTop: 0 } : { paddingTop: '2em' }
+    const listStyle = scrolled ? `${styles.navList} ${styles.scrolled}` : `${styles.navList}`
 
     return (
-        <nav>
-            <ul style={barStyle} className={styles.navList}>
+        <nav className={styles.nav}>
+            <ul className={listStyle}>
                 <li className={styles.navItem}>
                     <Link href="/#main"><a data-hover="Главная">Главная</a></Link>
                 </li>

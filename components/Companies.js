@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import styles from '../styles/Companies.module.css'
 
@@ -13,14 +13,15 @@ const companies = [
 ]
 
 export const Companies = () => (
-    <section className={styles.section}>
+    <section>
         <ul className={styles.container}>
             {companies.map(comp =>
-                <li key={comp.id}>
-                    <Image
+                <li key={comp.id} className={styles.brand}>
+                    {/* <Image
                         src={comp.img}
                         width={140}
-                        height={60} />
+                        height={60} /> */}
+                    <img src={comp.img} alt=""/>
                 </li>    
             )}
         </ul>
